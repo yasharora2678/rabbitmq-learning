@@ -1,0 +1,19 @@
+{
+  "name": "rabbitmq-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dispatch-messages": "node producer.js",
+    "handle-live-stream-messages": "node live-stream-notification.js",
+    "handle-comment-and-like-messages": "node comment-and-like-notification.js",
+    "handle-video-messages": "node new-video-notification.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.5"
+  }
+}
